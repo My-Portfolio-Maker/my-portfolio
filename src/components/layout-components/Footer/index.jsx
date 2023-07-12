@@ -1,12 +1,12 @@
 import React from "react";
-import { useAxios } from "../../../utils/useFetch";
-import { GET_SERVICES } from "../../../constants/ApiConstants";
+import { useAxios } from "@utils/useFetch";
+import { GET_SERVICES } from "@constants/ApiConstants";
 import { resetId, setPrefix } from "react-id-generator";
 import nextId from "react-id-generator";
 import AnimateOnScroll from "../../shared-components/AnimateOnScroll";
 import SectionLoader from "../../shared-components/SectionLoader";
 import { Link } from "react-router-dom";
-import { getPhoneNumber } from "../../../utils";
+import { getPhoneNumber } from "@utils";
 
 const Footer = (props) => {
   const { aboutMe, address, social, phone, email } = props.data;

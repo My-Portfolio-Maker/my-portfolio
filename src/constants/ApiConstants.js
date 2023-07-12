@@ -1,5 +1,4 @@
-import { API_BASE_URL, API_UPLOADS_URL} from "../configs/AppConfig"
-import { env } from '../configs/EnvironmentConfig'
+import { API_BASE_URL, API_UPLOADS_URL} from "@configs/AppConfig"
 
 
 export const GET_PROFILE = API_BASE_URL+'/get/profile'

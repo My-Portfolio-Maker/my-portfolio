@@ -2,6 +2,12 @@ import React from "react";
 import AnimateOnScroll from "../../../shared-components/AnimateOnScroll";
 import Section from "../../../shared-components/SectionContainer";
 import Heading from "../../../shared-components/Heading";
+import img4 from '/images/project-4.jpg'
+import img5 from '/images/project-5.jpg'
+import img1 from '/images/project-1.jpg'
+import img6 from '/images/project-6.jpg'
+import img2 from '/images/project-2.jpg'
+import img3 from '/images/project-3.jpg'
 
 const ProjectSection = () => {
   return (
@@ -20,7 +26,7 @@ const ProjectSection = () => {
           <div className="col-md-4">
             <AnimateOnScroll
               className="project img d-flex justify-content-center align-items-center"
-              style={{ backgroundImage: "url(images/project-4.jpg)" }}
+              style={{ backgroundImage: `url(${img4})` }}
             >
               <div className="overlay"></div>
               <div className="text text-center p-4">
@@ -34,7 +40,7 @@ const ProjectSection = () => {
           <div className="col-md-8">
           <AnimateOnScroll
               className="project img d-flex justify-content-center align-items-center"
-              style={{ backgroundImage: "url(images/project-5.jpg)" }}
+              style={{ backgroundImage: `url(${img5})` }}
             >
               <div className="overlay"></div>
               <div className="text text-center p-4">
@@ -50,7 +56,7 @@ const ProjectSection = () => {
           <div className="col-md-8">
             <AnimateOnScroll
               className="project img ftco-animate d-flex justify-content-center align-items-center"
-              style={{ backgroundImage: "url(images/project-1.jpg)" }}
+              style={{ backgroundImage: `url(${img1})` }}
             >
               <div className="overlay"></div>
               <div className="text text-center p-4">
@@ -63,7 +69,7 @@ const ProjectSection = () => {
 
             <AnimateOnScroll
               className="project img d-flex justify-content-center align-items-center"
-              style={{ backgroundImage: "url(images/project-6.jpg)" }}
+              style={{ backgroundImage: `url(${img6})` }}
             >
               <div className="overlay"></div>
               <div className="text text-center p-4">
@@ -79,7 +85,7 @@ const ProjectSection = () => {
               <div className="col-md-12">
                 <AnimateOnScroll
                   className="project img d-flex justify-content-center align-items-center"
-                  style={{ backgroundImage: "url(images/project-2.jpg)" }}
+                  style={{ backgroundImage: `url(${img2})` }}
                 >
                   <div className="overlay"></div>
                   <div className="text text-center p-4">
@@ -93,7 +99,7 @@ const ProjectSection = () => {
               <div className="col-md-12">
                 <AnimateOnScroll
                   className="project img d-flex justify-content-center align-items-center"
-                  style={{ backgroundImage: "url(images/project-3.jpg)" }}
+                  style={{ backgroundImage: `url(${img3})` }}
                 >
                   <div className="overlay"></div>
                   <div className="text text-center p-4">

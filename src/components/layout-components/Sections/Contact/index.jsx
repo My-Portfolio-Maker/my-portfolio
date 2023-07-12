@@ -5,9 +5,10 @@ import Heading from "../../../shared-components/Heading";
 import { getPhoneNumber } from "../../../../utils";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { useAxiosCallback } from "../../../../utils/useFetch";
-import { SEND_MESSAGE } from "../../../../constants/ApiConstants";
+import { useAxiosCallback } from "@utils/useFetch";
+import { SEND_MESSAGE } from "@constants/ApiConstants";
 import { message, notification } from "antd";
+import bgImage from '/images/about.jpg'
 
 const ContactSection = (props) => {
   const { address, phone, email, social } = props.data;
@@ -188,7 +189,7 @@ const ContactSection = (props) => {
           <div className="col-md-6 d-flex">
             <div
               className="img"
-              style={{ backgroundImage: "url(images/about.jpg)" }}
+              style={{ backgroundImage: `url(${bgImage})` }}
             ></div>
           </div>
         </div>

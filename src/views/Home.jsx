@@ -1,24 +1,21 @@
-import { useEffect, useState, lazy, Suspense } from "react";
+import { useEffect, lazy} from "react";
 import Navbar from "@components/layout-components/Navbar";
-import { useAxios } from "@utils/useFetch";
-import { API_BASE_URL, UID } from "@configs/AppConfig";
-import ScriptLoad from "../utils/ScriptLoad";
-import { useAxiosCallback } from "../utils/useFetch";
+import ScriptLoad from "@utils/ScriptLoad";
+import { useAxiosCallback } from "@utils/useFetch";
 import { useNavigate } from "react-router-dom";
-import { Parallax } from "react-scroll-parallax";
-import HeroSection from "../components/layout-components/Sections/Hero";
-import AboutSection from "../components/layout-components/Sections/About";
-import Loader from "../components/shared-components/Loader";
-const ResumeSection = lazy(()=>import("../components/layout-components/Sections/Resume")); 
-const ServicesSection = lazy(()=>import("../components/layout-components/Sections/Services"));
-const SkillsSection = lazy(()=>import("../components/layout-components/Sections/Skills"));
+import HeroSection from "@components/layout-components/Sections/Hero";
+import AboutSection from "@components/layout-components/Sections/About";
+import Loader from "@components/shared-components/Loader";
+const ResumeSection = lazy(()=>import("@components/layout-components/Sections/Resume")); 
+const ServicesSection = lazy(()=>import("@components/layout-components/Sections/Services"));
+const SkillsSection = lazy(()=>import("@components/layout-components/Sections/Skills"));
 const ProjectSection = lazy(()=>import("@components/layout-components/Sections/Projects"));
 const BlogSection = lazy(()=>import("@components/layout-components/Sections/Blogs"));
 const CounterSection = lazy(()=>import("@components/layout-components/Sections/Counter"));
-const Hireme = lazy(()=>import("../components/layout-components/Sections/Hireme"));
+const Hireme = lazy(()=>import("@components/layout-components/Sections/Hireme"));
 import ContactSection from "@components/layout-components/Sections/Contact";
 import Footer from "@components/layout-components/Footer";
-import { GET_PROFILE } from "../constants/ApiConstants";
+import { GET_PROFILE } from "@constants/ApiConstants";
 
 function Home() {
   const { data: profile, isLoading, callback: getProfile } = useAxiosCallback();
@@ -52,7 +49,7 @@ function Home() {
           <ServicesSection />
           <SkillsSection />
           <ProjectSection />
-          <BlogSection />
+          {/* <BlogSection /> */}
           <CounterSection />
           <Hireme />
           <ContactSection data={profile} />

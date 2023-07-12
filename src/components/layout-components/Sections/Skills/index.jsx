@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import AnimateOnScroll from "../../../shared-components/AnimateOnScroll";
 import Section from "../../../shared-components/SectionContainer";
 import Heading from "../../../shared-components/Heading";
-import { GET_SKILLS } from "../../../../constants/ApiConstants";
-import { useAxios } from "../../../../utils/useFetch";
+import { GET_SKILLS } from "@constants/ApiConstants";
+import { useAxios } from "@utils/useFetch";
 import SectionLoader from "../../../shared-components/SectionLoader";
 import { Waypoint } from "react-waypoint";
 import $ from 'jquery';
