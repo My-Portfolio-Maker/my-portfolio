@@ -1,10 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React, { Suspense } from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { Helmet } from "react-helmet";
+import "./assets/scss/style.scss";
+import Loader from "./components/shared-components/Loader";
+import ScriptLoad from "./utils/ScriptLoad";
+import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <>
+    <Suspense fallback={<Loader />}>
+    <BrowserRouter>
+      <App />
+      </BrowserRouter>
+    </Suspense>
+  </>
+);
