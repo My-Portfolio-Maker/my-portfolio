@@ -1,12 +1,13 @@
 import React from "react";
 import Banner from "../../Banner";
 import { Parallax } from "react-scroll-parallax";
+import bgImage from '/images/bg_1.jpg'
 
 const Hireme = () => {
   return (
     <>
       <Banner
-        bgImage={"url(images/bg_1.jpg)"}
+        bgImage={`url(${bgImage})`}
         heading="I'm <span>Available</span> for freelancing"
         content={() => (
           <>

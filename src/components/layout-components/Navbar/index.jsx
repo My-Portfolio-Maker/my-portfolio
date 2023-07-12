@@ -17,6 +17,10 @@ const Navbar = () => {
       name: "Resume",
     },
     {
+      id: "education-section",
+      name: "Education",
+    },
+    {
       id: "services-section",
       name: "Services",
     },
@@ -27,10 +31,6 @@ const Navbar = () => {
     {
       id: "projects-section",
       name: "Projects",
-    },
-    {
-      id: "blog-section",
-      name: "My Blog",
     },
     {
       id: "contact-section",

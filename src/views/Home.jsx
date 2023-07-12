@@ -52,7 +52,7 @@ function Home() {
           <ServicesSection />
           <SkillsSection />
           <ProjectSection />
-          <BlogSection />
+          {/* <BlogSection /> */}
           <CounterSection />
           <Hireme />
           <ContactSection data={profile} />

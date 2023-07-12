@@ -13,9 +13,9 @@ function App() {
   return (
     <ParallaxProvider>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/404" element={<NotFound />} />
-        <Route path="*" element={<Navigate to="/404" replace />} />
+        <Route index element={<Home />} />
+        <Route path="404" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="404" replace />} />
       </Routes>
     </ParallaxProvider>
   );
