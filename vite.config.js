@@ -8,7 +8,10 @@ export default defineConfig({
 
   base: process.env.VITE_BASE_PATH,
   server: {
-    host: true
+    host: true,
+    fs: {
+      allow: ['..']
+    }
   },
 
   resolve: {
@@ -21,6 +24,7 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, 'src/assets'),
       '@auth': path.resolve(__dirname, 'src/auth'),
       '@redux': path.resolve(__dirname, 'src/redux'),
+      '@views': path.resolve(__dirname, 'src/views')
     }
 
   }

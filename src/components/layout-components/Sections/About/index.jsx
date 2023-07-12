@@ -5,7 +5,7 @@ import Heading from "../../../shared-components/Heading";
 import NumberCounter from "../../../shared-components/NumberCounter";
 import moment from "moment/moment";
 import { handleDownload, handleImage } from "@utils";
-import { GET_CV, GET_IMAGE } from "../../../../constants/ApiConstants";
+import { GET_CV, GET_IMAGE } from "@constants/ApiConstants";
 import {Link} from 'react-router-dom'
 
 const AboutSection = ({data}) => {

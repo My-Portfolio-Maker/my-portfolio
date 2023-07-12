@@ -2,8 +2,8 @@ import React from "react";
 import AnimateOnScroll from "../../../shared-components/AnimateOnScroll";
 import Section from "../../../shared-components/SectionContainer";
 import NumberCounter from "../../../shared-components/NumberCounter";
-import { useAxios } from "../../../../utils/useFetch";
-import { GET_EXTRAS } from "../../../../constants/ApiConstants";
+import { useAxios } from "@utils/useFetch";
+import { GET_EXTRAS } from "@constants/ApiConstants";
 import SectionLoader from "../../../shared-components/SectionLoader";
 import { Waypoint } from "react-waypoint";
 

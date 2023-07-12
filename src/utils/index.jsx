@@ -1,5 +1,5 @@
 import moment from "moment";
-import { UID } from "../configs/AppConfig";
+import { UID } from "@configs/AppConfig";
 
 const handleDownload = (url, name, type) => {
   const download = `${url}/${name}/download?uid=${UID}&type=${type}`;

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import fetch from "../auth/FetchInterceptor";
+import fetch from "@auth/FetchInterceptor";
 
 const useAxios = (AxiosConfig, responseKey) => {
   const {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import {Link as ReactLink } from "react-router-dom";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -65,9 +65,9 @@ const Navbar = () => {
       id="ftco-navbar"
     >
       <div className="container">
-        <a className="navbar-brand" href="/">
+        <ReactLink className="navbar-brand" to="/">
           Umang
-        </a>
+        </ReactLink>
         <button
           className="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
           type="button"

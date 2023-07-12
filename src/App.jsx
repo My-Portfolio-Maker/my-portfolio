@@ -1,22 +1,21 @@
-import { useEffect, useState, lazy, Suspense } from "react";
-import Navbar from "./components/layout-components/Navbar";
-import { useAxios } from "./utils/useFetch";
-import { API_BASE_URL, UID } from "./configs/AppConfig";
-import Home from "./views/Home";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import Loader from "./components/shared-components/Loader";
-import NotFound from "./views/NotFound";
-import ScriptLoad from "./utils/ScriptLoad";
+import Home from "@views/Home";
+import { Navigate, Route, Routes } from "react-router-dom";
+import NotFound from "@views/NotFound";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { Suspense } from "react";
+import Loader from "./components/shared-components/Loader";
 
 function App() {
   return (
     <ParallaxProvider>
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="404" element={<NotFound />} />
-        <Route path="*" element={<Navigate to="404" replace />} />
-      </Routes>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/404" element={<NotFound />} />
+
+          <Route path="*" element={<Navigate to="404" replace />} />
+        </Routes>
+      </Suspense>
     </ParallaxProvider>
   );
 }

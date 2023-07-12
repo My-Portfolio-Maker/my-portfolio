@@ -1,6 +1,5 @@
 import React from "react";
 import Banner from "../../Banner";
-import { Parallax } from "react-scroll-parallax";
 import bgImage from '/images/bg_1.jpg'
 
 const Hireme = () => {

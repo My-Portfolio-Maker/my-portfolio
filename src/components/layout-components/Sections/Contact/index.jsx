@@ -5,8 +5,8 @@ import Heading from "../../../shared-components/Heading";
 import { getPhoneNumber } from "../../../../utils";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { useAxiosCallback } from "../../../../utils/useFetch";
-import { SEND_MESSAGE } from "../../../../constants/ApiConstants";
+import { useAxiosCallback } from "@utils/useFetch";
+import { SEND_MESSAGE } from "@constants/ApiConstants";
 import { message, notification } from "antd";
 import bgImage from '/images/about.jpg'
 

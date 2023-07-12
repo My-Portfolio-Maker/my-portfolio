@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Section from "../../../shared-components/SectionContainer";
 import OwlCarousel from "react-owl-carousel";
-import { GET_CV, GET_IMAGE } from "../../../../constants/ApiConstants";
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { GET_IMAGE } from "@constants/ApiConstants";
 import { Link } from "react-scroll";
-import { Link as ReactLink } from "react-router-dom";
-import { Parallax } from "react-scroll-parallax";
-import { handleDownload, handleImage } from "../../../../utils";
+import { handleImage } from "@utils";
 import AnimateOnScroll from "../../../shared-components/AnimateOnScroll";
 
 const HeroSection = ({ data }) => {

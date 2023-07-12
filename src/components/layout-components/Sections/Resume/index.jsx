@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import AnimateOnScroll from "../../../shared-components/AnimateOnScroll";
 import Section from "../../../shared-components/SectionContainer";
 import Heading from "../../../shared-components/Heading";
-import { useAxios, useAxiosCallback } from "../../../../utils/useFetch";
-import { GET_CV, GET_RESUME } from "../../../../constants/ApiConstants";
-import Loader from "../../../shared-components/Loader";
+import { useAxios } from "@utils/useFetch";
+import { GET_CV, GET_RESUME } from "@constants/ApiConstants";
 import SectionLoader from "../../../shared-components/SectionLoader";
 import { handleDate } from "@utils";
 import { Link as ReactLink } from "react-router-dom";
-import { getMonth, getYear, handleDownload } from "../../../../utils";
+import { getMonth, getYear, handleDownload } from "@utils";
 
 const ResumeSection = (props) => {
   const { name, type } = props.cv;
