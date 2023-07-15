@@ -3,7 +3,7 @@ import Navbar from "@components/layout-components/Navbar";
 import ScriptLoad from "@utils/ScriptLoad";
 import { useAxiosCallback } from "@utils/useFetch";
 import { useNavigate } from "react-router-dom";
-import HeroSection from "@components/layout-components/Sections/Hero";
+const HeroSection = lazy(()=>import("@components/layout-components/Sections/Hero"));
 import AboutSection from "@components/layout-components/Sections/About";
 import Loader from "@components/shared-components/Loader";
 const ResumeSection = lazy(()=>import("@components/layout-components/Sections/Resume")); 

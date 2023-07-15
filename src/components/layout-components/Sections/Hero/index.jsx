@@ -1,12 +1,13 @@
 import React from "react";
 import Section from "../../../shared-components/SectionContainer";
 import OwlCarousel from "react-owl-carousel";
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 import { GET_IMAGE } from "@constants/ApiConstants";
 import { Link } from "react-scroll";
 import { handleImage } from "@utils";
 import AnimateOnScroll from "../../../shared-components/AnimateOnScroll";
+import { LazyLoadComponent, LazyLoadImage } from "react-lazy-load-image-component";
 
 const HeroSection = ({ data }) => {
   const { name, designation, field, city, cv, images } = data;
@@ -47,19 +48,16 @@ const HeroSection = ({ data }) => {
               className="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
               data-scrollax-parent="true"
             >
-              <div
-                className="one-third js-fullheight order-md-last img"
-                style={{
-                  backgroundImage: `url(${handleImage(
+              <div className="one-third js-fullheight order-md-last">
+                <LazyLoadImage
+                  src={`${handleImage(
                     GET_IMAGE,
                     images[0].name,
-                    images[0].type
-                  )})`,
-                }}
-              >
+                  )}`}
+                  className="img"
+                />
                 <div className="overlay"></div>
               </div>
-
               <AnimateOnScroll className="one-forth d-flex align-items-center">
                 <div className="text">
                   <span className="subheading">Hello!</span>
@@ -96,14 +94,14 @@ const HeroSection = ({ data }) => {
               className="row d-flex no-gutters slider-text align-items-end justify-content-end"
               data-scrollax-parent="true"
             >
-              <div
-                className="one-third js-fullheight order-md-last img"
-                style={{ backgroundImage: `url(${handleImage(
-                  GET_IMAGE,
-                  images[1].name,
-                  images[1].type
-                )})` }}
-              >
+              <div className="one-third js-fullheight order-md-last">
+                <LazyLoadImage
+                  src={`${handleImage(
+                    GET_IMAGE,
+                    images[1].name,
+                  )}`}
+                  className="img"
+                />
                 <div className="overlay"></div>
               </div>
               <AnimateOnScroll className="one-forth d-flex align-items-center">

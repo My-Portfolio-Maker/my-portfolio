@@ -7,7 +7,7 @@ const handleDownload = (url, name, type) => {
 };
 
 const handleImage = (url, name, type) => {
-  const view = `${url}/${name}/view?uid=${UID}&type=${type}`;
+  const view = `${url}/${name}/view?uid=${UID}`;
   return view;
 };
 
