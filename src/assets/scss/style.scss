@@ -383,6 +383,11 @@ h5,
     &.active {
       opacity: 1;
     }
+    
+    .img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .owl-dots {
     text-align: center;
@@ -846,8 +851,14 @@ h5,
     .img {
       display: block;
       width: 100%;
+      object-fit: cover;
+      height: 100%;
       position: relative;
       z-index: 1;
+
+      @include media-breakpoint-down(md){
+        display: none;
+      }
     }
   }
   ul.about-info {

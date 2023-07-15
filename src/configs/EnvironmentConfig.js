@@ -1,12 +1,12 @@
 
 const dev = {
 	API_ENDPOINT_URL: 'http://localhost:3001/api/v1',
-	API_IMAGE_URL: 'http://localhost:3001/api/v1/get/uploads',
+	API_IMAGE_URL: 'http://localhost:3001/api/v1/get/uploads/s3',
 };
 
 const prod = {
 	API_ENDPOINT_URL: 'https://my-portfolio-backend-cpre.onrender.com/api/v1',
-	API_IMAGE_URL: 'https://my-portfolio-backend-cpre.onrender.com/api/v1/get/uploads',
+	API_IMAGE_URL: 'https://my-portfolio-backend-cpre.onrender.com/api/v1/get/uploads/s3',
 
 };
 

@@ -7,6 +7,7 @@ import moment from "moment/moment";
 import { handleDownload, handleImage } from "@utils";
 import { GET_CV, GET_IMAGE } from "@constants/ApiConstants";
 import {Link} from 'react-router-dom'
+import { LazyLoadComponent, LazyLoadImage } from "react-lazy-load-image-component";
 
 const AboutSection = ({data}) => {
  
@@ -19,9 +20,11 @@ const AboutSection = ({data}) => {
             <div className="img-about img d-flex align-items-stretch">
               <div className="overlay"></div>
               <div
-                className="img d-flex align-self-stretch align-items-center"
-                style={{ backgroundImage: `url(${handleImage(GET_IMAGE, images[0].name, images[0].type)})`, transform: 'scaleX(-1)' }}
-              ></div>
+                className="d-flex align-self-stretch align-items-center"
+                
+              >
+                <LazyLoadImage className="img" src={`${handleImage(GET_IMAGE, images[0].name)}`} />
+              </div>
             </div>
           </div>
           <div className="col-md-6 col-lg-7 pl-lg-5 pb-5">
