@@ -48,7 +48,7 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -2018,7 +2018,6 @@ pre code {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
   .table-responsive-sm > .table-bordered {
     border: 0;
@@ -2030,7 +2029,6 @@ pre code {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
   .table-responsive-md > .table-bordered {
     border: 0;
@@ -2042,7 +2040,6 @@ pre code {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
   .table-responsive-lg > .table-bordered {
     border: 0;
@@ -2054,7 +2051,6 @@ pre code {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
   .table-responsive-xl > .table-bordered {
     border: 0;
@@ -2065,7 +2061,6 @@ pre code {
   display: block;
   width: 100%;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
 }
 .table-responsive > .table-bordered {
   border: 0;
