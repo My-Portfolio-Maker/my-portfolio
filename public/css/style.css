@@ -48,7 +48,7 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -2018,7 +2018,6 @@ pre code {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
   .table-responsive-sm > .table-bordered {
     border: 0;
@@ -2030,7 +2029,6 @@ pre code {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
   .table-responsive-md > .table-bordered {
     border: 0;
@@ -2042,7 +2040,6 @@ pre code {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
   .table-responsive-lg > .table-bordered {
     border: 0;
@@ -2054,7 +2051,6 @@ pre code {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
   .table-responsive-xl > .table-bordered {
     border: 0;
@@ -2065,7 +2061,6 @@ pre code {
   display: block;
   width: 100%;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
 }
 .table-responsive > .table-bordered {
   border: 0;
@@ -11655,6 +11650,8 @@ h5,
   margin-bottom: 30px;
   position: relative;
   z-index: 0;
+  filter: contrast(0.8);
+  border-radius: 15px;
 }
 .project.img-2 {
   height: 600px;
@@ -11697,6 +11694,8 @@ h5,
   content: "";
   opacity: 0;
   background: #ffbd39;
+  border-radius: 15px;
+  cursor: pointer;
   z-index: -1;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;

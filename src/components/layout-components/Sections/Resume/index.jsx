@@ -61,15 +61,21 @@ const ResumeSection = (props) => {
   );
 
   return (
-    <Section id={`${resumeType==='experience'?'resume-section':'education-section'}`}>
+    <Section
+      id={`${
+        resumeType === "experience" ? "resume-section" : "education-section"
+      }`}
+    >
       <div className="container">
         <div className="row justify-content-center pb-5">
           <Heading
             className={"col-md-10"}
             title={`${resumeType === "experience" ? "Resume" : "Education"}`}
-            subtitle="A small river named Duden flows by their place and supplies it
-            with the necessary regelialia. It is a paradisematic country, in
-            which roasted parts of sentences fly into your mouth."
+            subtitle={`${
+              resumeType === "experience"
+                ? "Throughout my career, I have collaborated closely with teams, including designers, product managers and other clients to ensure smooth project execution and timely delivery"
+                : ""
+            }`}
             bgTitle={`${resumeType === "experience" ? "Resume" : "Education"}`}
           />
         </div>

@@ -26,7 +26,7 @@ const Heading = ({
         </Parallax>
         <h2 className="mb-4">{title}</h2>
 
-        <p>{subtitle}</p>
+        <p className={`${!subtitle && "mb-5"}`}>{subtitle}</p>
         {children}
       
     </AnimateOnScroll>

@@ -8,6 +8,7 @@ import { handleDownload, handleImage } from "@utils";
 import { GET_CV, GET_IMAGE } from "@constants/ApiConstants";
 import {Link} from 'react-router-dom'
 import { LazyLoadComponent, LazyLoadImage } from "react-lazy-load-image-component";
+import { getPhoneNumber } from "../../../../utils";
 
 const AboutSection = ({data}) => {
  
@@ -54,7 +55,7 @@ const AboutSection = ({data}) => {
                     <span>Email:</span> <span>{email}</span>
                   </li>
                   <li className="d-flex">
-                    <span>Phone: </span> <span>{phone}</span>
+                    <span>Phone: </span> <span>{getPhoneNumber(phone)}</span>
                   </li>
                 </ul>
               </Heading>

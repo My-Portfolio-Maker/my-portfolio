@@ -6,7 +6,7 @@ import nextId from "react-id-generator";
 import AnimateOnScroll from "../../shared-components/AnimateOnScroll";
 import SectionLoader from "../../shared-components/SectionLoader";
 import { Link } from "react-router-dom";
-import { getPhoneNumber } from "@utils";
+import { getPhoneNumber, getClickableLink } from "@utils";
 
 const Footer = (props) => {
   const { aboutMe, address, social, phone, email } = props.data;
@@ -32,8 +32,10 @@ const Footer = (props) => {
       return list;
     }
   );
+
+  console.log(social);
   return (
-    <footer className="ftco-footer ftco-section">
+    <footer id={'footer-section'} className="ftco-footer ftco-section">
       <div className="container">
         <div className="row mb-5">
           <div className="col-md">
@@ -41,34 +43,22 @@ const Footer = (props) => {
               <h2 className="ftco-heading-2">About</h2>
               <p>{aboutMe}</p>
               <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li>
-                  <AnimateOnScroll>
-                    <Link target="_blank" to={social.twitter}>
-                      <span className="icon-twitter"></span>
-                    </Link>
-                  </AnimateOnScroll>
-                </li>
-                <li>
-                  <AnimateOnScroll delay>
-                    <Link target="_blank" to={social.facebook}>
-                      <span className="icon-facebook"></span>
-                    </Link>
-                  </AnimateOnScroll>
-                </li>
-                <li>
-                  <AnimateOnScroll delay>
-                    <Link target="_blank" to={social.linkedin}>
-                      <span className="icon-linkedin"></span>
-                    </Link>
-                  </AnimateOnScroll>
-                </li>
-                <li>
-                  <AnimateOnScroll delay>
-                    <Link target="_blank" to={social.github}>
-                      <span className="icon-github"></span>
-                    </Link>
-                  </AnimateOnScroll>
-                </li>
+                {social &&
+                  Object.keys(social).map(
+                    (val) =>
+                      social[val] && (
+                        <li>
+                          <AnimateOnScroll>
+                            <Link
+                              target="_blank"
+                              to={getClickableLink(social[val])}
+                            >
+                              <span className={`icon-${val}`}></span>
+                            </Link>
+                          </AnimateOnScroll>
+                        </li>
+                      )
+                  )}
               </ul>
             </div>
           </div>
@@ -125,7 +115,7 @@ const Footer = (props) => {
           </div>
           <div className="col-md">
             <div className="ftco-footer-widget mb-4">
-              <h2 className="ftco-heading-2">Have a Questions?</h2>
+              <h2 className="ftco-heading-2">Have Questions?</h2>
               <div className="block-23 mb-3">
                 <ul>
                   <li>
@@ -154,12 +144,12 @@ const Footer = (props) => {
             <p>
               Copyright &copy; {new Date().getFullYear()} All rights reserved |
               Developed By{" "}
-              <a
+              <Link
                 target="_blank"
-                href="https://www.linkedin.com/in/umang-maheshwari01/"
+                to={"https://www.linkedin.com/in/umang-maheshwari23/"}
               >
                 Umang Maheshwari
-              </a>
+              </Link>
             </p>
           </div>
         </div>

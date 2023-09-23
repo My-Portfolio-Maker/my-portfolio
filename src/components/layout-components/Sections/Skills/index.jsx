@@ -35,8 +35,7 @@ const SkillsSection = () => {
           <Heading
             className={"col-md-12"}
             title="My Skills"
-            subtitle="Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia"
+            subtitle=""
             bgTitle="Skills"
           />
         </div>
@@ -45,7 +44,7 @@ const SkillsSection = () => {
             <SectionLoader />
           </>
         ) : (
-        <div className="row">
+        <div className="row mt-4">
           {skills.map((data, index) => {
             const { _id, skill, score } = data;
             return (

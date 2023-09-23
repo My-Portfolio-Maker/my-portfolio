@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link as ReactLink } from "react-router-dom";
 import { Link } from "react-scroll";
+import { handleImage } from "../../../utils";
+import { GET_IMAGE } from "../../../constants/ApiConstants";
 
-
-const Navbar = () => {
+const Navbar = ({ data ={} }) => {
   const navLinks = [
     {
       id: "home-section",
@@ -107,7 +109,7 @@ const Navbar = () => {
     >
       <div className="container">
         <ReactLink className="navbar-brand" to="/">
-          Umang
+          {data.name.substring(0, data.name.indexOf(' '))}
         </ReactLink>
 
         <button
