@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../../Banner";
-import bgImage from '/images/bg_1.jpg'
+import bgImage from "/images/bg_1.jpg";
+import { Link } from "react-scroll";
 
 const Hireme = () => {
   return (
@@ -10,15 +11,18 @@ const Hireme = () => {
         heading="I'm <span>Available</span> for freelancing"
         content={() => (
           <>
-            <p>
-              A small river named Duden flows by their place and supplies it
-              with the necessary regelialia.
+            <p className="mb-4">
+            An effective communicator and a problem-solver, always eager to learn and adapt to new technologies and industry trends.
             </p>
-            
-              <a href="#" className="btn btn-primary py-3 px-5">
-                Hire me
-              </a>
-            
+
+            <Link
+              smooth={true}
+              spy={true}
+              to="contact-section"
+              className="btn btn-primary py-3 px-5"
+            >
+              Hire me
+            </Link>
           </>
         )}
       />

@@ -74,12 +74,14 @@ const HeroSection = ({ data }) => {
                     >
                       Hire me
                     </Link>
-                    <a
-                      href="#"
+                    <Link
+                     smooth={true}
+                     spy={true}
+                     to="projects-section"
                       className="btn btn-white btn-outline-white py-3 px-4"
                     >
                       My works
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </AnimateOnScroll>
@@ -118,6 +120,14 @@ const HeroSection = ({ data }) => {
                       className="btn btn-primary py-3 px-4 mr-3"
                     >
                       My Experiences
+                    </Link>
+                    <Link
+                      smooth={true}
+                      spy={true}
+                      to="footer-section"
+                      className="btn btn-primary py-3 px-4 mr-3"
+                    >
+                      Social Links
                     </Link>
                   </p>
                 </div>

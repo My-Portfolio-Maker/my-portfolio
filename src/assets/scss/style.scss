@@ -27,9 +27,6 @@ $secondary: #a0f669;
   transition: all $transition ease;
 }
 
-html {
-  // overflow-x: hidden;
-}
 body {
   font-family: $font-primary;
   background: $black;
@@ -383,7 +380,7 @@ h5,
     &.active {
       opacity: 1;
     }
-    
+
     .img {
       height: 100%;
       object-fit: cover;
@@ -856,7 +853,7 @@ h5,
       position: relative;
       z-index: 1;
 
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         display: none;
       }
     }
@@ -1098,6 +1095,9 @@ h5,
   margin-bottom: 30px;
   position: relative;
   z-index: 0;
+  filter: contrast(0.8);
+  // border-radius: 8px;
+  cursor: pointer;
   &.img-2 {
     height: 600px;
     @include media-breakpoint-down(sm) {
@@ -1136,13 +1136,14 @@ h5,
     opacity: 0;
     background: $primary;
     z-index: -1;
+    // border-radius: 15px;
+    cursor: pointer;
     @include transition(0.3s);
     @include media-breakpoint-down(sm) {
       opacity: 0.2;
     }
   }
   .text {
-    max-width: 80%;
     z-index: 1;
     opacity: 0;
     @include transition(0.3s);
@@ -1709,13 +1710,6 @@ textarea.form-control {
   }
 }
 .contact-section {
-  .img {
-    width: 100%;
-    background-position: top center;
-    @include media-breakpoint-down(md) {
-      height: 500px;
-    }
-  }
   .contact-info {
     p {
       a {
@@ -1731,6 +1725,28 @@ textarea.form-control {
       @include media-breakpoint-down(sm) {
         display: block;
         width: 100%;
+      }
+    }
+  }
+
+  .contact-image {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      background-color: #1d1d1d;
+      height: 100%;
+    }
+
+    .img {
+      width: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transform: scale(1);
+      filter: brightness(0.9);
+      @include media-breakpoint-down(md) {
+        height: 500px;
+        transform: scale(1);
       }
     }
   }

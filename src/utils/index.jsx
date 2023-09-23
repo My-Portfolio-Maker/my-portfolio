@@ -7,7 +7,7 @@ const handleDownload = (url, name, type) => {
 };
 
 const handleImage = (url, name, type) => {
-  const view = `${url}/${name}/view?uid=${UID}`;
+  const view = `${url}/${name}?uid=${UID}`;
   return view;
 };
 
@@ -42,6 +42,10 @@ const getPhoneNumber = (phone) => {
   return ''
 };
 
+const getClickableLink = (link)=>{
+  return link.startsWith("http://") || link.startsWith("https://")? link: `http://${link}`
+}
+
 export {
   handleDownload,
   handleImage,
@@ -49,4 +53,5 @@ export {
   getYear,
   getMonth,
   getPhoneNumber,
+  getClickableLink
 };

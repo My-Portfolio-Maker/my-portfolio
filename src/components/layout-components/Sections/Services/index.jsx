@@ -52,8 +52,7 @@ const ServicesSection = () => {
           <Heading
             className={"col-md-12"}
             title="Services"
-            subtitle="Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia"
+            subtitle="An enthusiastic full stack web developer, having a strong foundation in front-end and back-end technologies."
             bgTitle="Services"
           />
         </div>
