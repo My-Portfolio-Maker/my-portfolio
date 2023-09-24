@@ -54,7 +54,7 @@ const CounterSection = () => {
                   <Waypoint topOffset={"95%"} onEnter={handleEnter}>
                     <div className="block-18">
                       <div className="text">
-                        <NumberCounter number={parseInt(description)} />
+                        <NumberCounter number={description} />
                         <span>{name}</span>
                       </div>
                     </div>

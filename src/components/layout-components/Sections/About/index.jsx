@@ -64,7 +64,7 @@ const AboutSection = ({data}) => {
               <div className="counter-wrap d-flex mt-md-3">
                 <div className="text">
                   <p className="mb-4">
-                  <NumberCounter bold={false} number={project_completed} />
+                  <NumberCounter bold={true} number={project_completed} />
                     <span> {project_completed == 1?'Project':'Projects'} completed</span>
                   </p>
                   <p>

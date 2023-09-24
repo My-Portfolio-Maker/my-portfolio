@@ -9,6 +9,7 @@ import { useAxiosCallback } from "@utils/useFetch";
 import { SEND_MESSAGE, GET_IMAGE } from "@constants/ApiConstants";
 import { message, notification } from "antd";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import ContactUsImage from '/images/contact_us.png'
 
 const ContactSection = (props) => {
   const { address, phone, email, social, images } = props.data;
@@ -196,7 +197,7 @@ const ContactSection = (props) => {
             ></div> */}
               <LazyLoadImage
                 className="img"
-                src={`/images/contact_us.png`}
+                src={ContactUsImage}
               />
               <div className="overlay"></div>
             </div>
