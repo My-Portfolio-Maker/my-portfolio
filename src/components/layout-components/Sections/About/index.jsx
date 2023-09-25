@@ -37,7 +37,7 @@ const AboutSection = ({data}) => {
                 subtitle={aboutMe}
                 bgTitle="About"
               >
-                <ul className="about-info mt-4 px-md-0 px-2">
+                <ul className="about-info mt-4">
                   <li className="d-flex">
                     <span>Name:</span> <span>{name}</span>
                   </li>
