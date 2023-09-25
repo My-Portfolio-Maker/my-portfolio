@@ -17,7 +17,7 @@ const Navbar = ({ data ={} }) => {
     },
     {
       id: "resume-section",
-      name: "Resume",
+      name: "Experience",
     },
     {
       id: "education-section",

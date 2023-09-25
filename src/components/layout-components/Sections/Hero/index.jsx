@@ -125,7 +125,7 @@ const HeroSection = ({ data }) => {
                       smooth={true}
                       spy={true}
                       to="footer-section"
-                      className="btn btn-primary py-3 px-4 mr-3"
+                      className="btn btn-primary py-3 px-4"
                     >
                       Social Links
                     </Link>

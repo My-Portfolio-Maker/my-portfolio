@@ -70,13 +70,13 @@ const ResumeSection = (props) => {
         <div className="row justify-content-center pb-5">
           <Heading
             className={"col-md-10"}
-            title={`${resumeType === "experience" ? "Resume" : "Education"}`}
+            title={`${resumeType === "experience" ? "Experience" : "My Education"}`}
             subtitle={`${
               resumeType === "experience"
                 ? "Throughout my career, I have collaborated closely with teams, including designers, product managers and other clients to ensure smooth project execution and timely delivery"
                 : ""
             }`}
-            bgTitle={`${resumeType === "experience" ? "Resume" : "Education"}`}
+            bgTitle={`${resumeType === "experience" ? "Experience" : "Education"}`}
           />
         </div>
         {isLoading && !resume ? (
