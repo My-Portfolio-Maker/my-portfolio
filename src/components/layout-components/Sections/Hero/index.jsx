@@ -14,7 +14,7 @@ const HeroSection = ({ data }) => {
 
   let options = {
     loop: true,
-    autoplay: true,
+    // autoplay: true,
     margin: 0,
     animateOut: "fadeOut",
     animateIn: "fadeIn",
@@ -117,18 +117,11 @@ const HeroSection = ({ data }) => {
                       smooth={true}
                       spy={true}
                       to="resume-section"
-                      className="btn btn-primary py-3 px-4 mr-3"
+                      className="btn btn-primary py-3 px-4"
                     >
                       My Experiences
                     </Link>
-                    <Link
-                      smooth={true}
-                      spy={true}
-                      to="footer-section"
-                      className="btn btn-primary py-3 px-4"
-                    >
-                      Social Links
-                    </Link>
+                    
                   </p>
                 </div>
               </AnimateOnScroll>
