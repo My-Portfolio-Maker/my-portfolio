@@ -14,7 +14,7 @@ const HeroSection = ({ data }) => {
 
   let options = {
     loop: true,
-    // autoplay: true,
+    autoplay: true,
     margin: 0,
     animateOut: "fadeOut",
     animateIn: "fadeIn",
