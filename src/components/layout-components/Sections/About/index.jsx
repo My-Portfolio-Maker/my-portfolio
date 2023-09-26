@@ -24,7 +24,7 @@ const AboutSection = ({data}) => {
                 className="d-flex align-self-stretch align-items-center"
                 
               >
-                <LazyLoadImage className="img" src={`${handleImage(GET_IMAGE, images[0].name)}`} />
+                <LazyLoadImage className="img" src={`${handleImage(GET_IMAGE, images[2].name)}`} />
               </div>
             </div>
           </div>
