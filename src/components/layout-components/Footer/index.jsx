@@ -32,8 +32,6 @@ const Footer = (props) => {
       return list;
     }
   );
-
-  console.log(social);
   return (
     <footer id={'footer-section'} className="ftco-footer ftco-section">
       <div className="container">
@@ -47,7 +45,7 @@ const Footer = (props) => {
                   Object.keys(social).map(
                     (val) =>
                       social[val] && (
-                        <li>
+                        <li key={val}>
                           <AnimateOnScroll>
                             <Link
                               target="_blank"
