@@ -446,9 +446,11 @@ h5,
           text-align: center;
         }
         .one-third {
-          width: 60%;
-          position: relative;
+          width: 100%;
+          position: absolute;
           // height: 650px;
+          top: 0;
+          right: 0;
           z-index: -1;
           .overlay {
             position: absolute;
@@ -650,7 +652,7 @@ h5,
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 40px;
+      bottom: 60px;
       width: 100%;
       @include media-breakpoint-down(sm) {
         bottom: 5px;
