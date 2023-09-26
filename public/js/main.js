@@ -64,7 +64,6 @@
 				$('.number').each(function () {
 					var $this = $(this),
 						num = $this.data('number');
-					console.log(num);
 					$this.animateNumber(
 						{
 							number: num,
