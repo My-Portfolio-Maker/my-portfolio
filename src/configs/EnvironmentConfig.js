@@ -5,8 +5,8 @@ const dev = {
 };
 
 const prod = {
-	API_ENDPOINT_URL: 'https://my-portfolio-backend-cpre.onrender.com/api/v1',
-	API_IMAGE_URL: 'https://my-portfolio-backend-cpre.onrender.com/api/v1/get/uploads/s3',
+	API_ENDPOINT_URL: 'https://myportfoliobackend-u26ae7g7.b4a.run/api/v1',
+	API_IMAGE_URL: 'https://myportfoliobackend-u26ae7g7.b4a.run/api/v1/get/uploads/s3',
 
 };
 
